@@ -8,7 +8,9 @@ pipeline{
     agent any
     stages{
         stage("demo"){
-            tools.PrintMes("my first lib")
+            step{
+                tools.PrintMes("my first lib")
+            }
         }
     }
 }
