@@ -10,7 +10,10 @@ pipeline{
         stage("demo"){
             steps{
                 script{
-                    tools.PrintMes("my first lib")   
+                    tools.PrintMes("my first lib","red")
+                    tools.PrintMes("my first lib","blue")
+                    tools.PrintMes("my first lib","green")   
+                    tools.PrintMes("my first lib","green1")
                 }
             }
         }
